@@ -1,0 +1,106 @@
+@font-face {
+    font-family: poppins;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: poppins, sans-serif;
+}
+header{
+    background-image: url(images/banner-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 400px;
+}
+.logo{
+    float: left;
+    padding: 20px 20px;
+}
+.interne {
+    position: absolute;
+    top: 35px; right: 300px; 
+    padding: 0px 10px;   
+}
+.interne > li{
+    margin: 0px 20px;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+.social{
+    position: absolute;
+    top: 35px; right: 15px;
+    padding: 0px 10px;   
+}
+.social > li{
+    margin: 0PX 20px;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+header > h1{
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 20px;
+    margin-top: 0%;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.nav__position{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav__position > a{
+    margin: 0px 25px 
+} 
+section{
+    margin: 150px 10px;
+}
+.ligne > img{
+    width: 320px;
+    height: 250px;
+    margin: 15px;
+}
+footer{
+    background-color: rgb(24, 23, 23);
+    text-align: center;
+    color: white;
+    height: 400px;
+    padding-top: 150px;
+}
+.footer__position, ul{
+    display: flex;
+    justify-content: center;
+}
+.footer__position > li{
+    margin: 25px 25px;
+}
+.footer__position, a{
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer__nav > li{
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin: 25px 25px;
+    text-transform: uppercase;
+}
+.footer__nav > li{
+    border-radius: 50%;
+    background-color: rgb(54, 53, 53);
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 20px;
+}
+footer > p{
+    margin-top: 75px;
+}
