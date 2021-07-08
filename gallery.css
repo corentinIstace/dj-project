@@ -1,61 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 @font-face {
     font-family: poppins;
     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 }
 body{
-    margin: 0%;
-    padding: 0%;
     font-family: poppins, sans-serif;
 }
 header{
     background-image: url(images/banner-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    font-weight: 600;
     color: white;
-    height: 400px;
+    padding-top: 2rem;
+    text-align: center;
 }
-.logo{
+/*Navigation*/
+header img{
     float: left;
-    padding: 20px 20px;
+    margin-left: 3rem;
 }
-.interne {
-    position: absolute;
-    top: 35px; right: 300px; 
-    padding: 0px 10px;   
-}
-.interne > li{
-    margin: 0px 20px;
-    list-style-type: none;
-    font-size: 1.2em;
-}
-.social{
-    position: absolute;
-    top: 35px; right: 15px;
-    padding: 0px 10px;   
-}
-.social > li{
-    margin: 0PX 20px;
-    list-style-type: none;
-    font-size: 1.2em;
-}
-header > h1{
-    text-align: center;
-    padding-top: 200px;
-    margin-bottom: 20px;
-    margin-top: 0%;
-    font-size: 3em;
-    text-transform: uppercase;
-}
-.nav__position{
-    text-align: center;
-    margin-top: 50px;
+nav .main_pages{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
-.nav__position > a{
-    margin: 0px 25px 
-} 
+header nav{
+    position: absolute;
+    top: 2.3rem;
+    right: 7rem;
+}
+header li{
+    list-style: none;
+    display: table-cell;
+    padding: 0.8rem 0.7rem;
+}
+header .interne a{
+    padding: 0 1rem;
+}
+header .social{
+    font-size: 1.5em;
+}
+i{
+    opacity: 50%;
+}
+i:hover{
+    opacity: 100%;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+li a{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header a img{
+    width: auto;
+}
+label{
+    display: none;
+}
+label, #toggle{
+    display: none;
+}
+/*Text*/
+h1{
+    font-size: 3rem;
+    text-shadow: 0px 0px 0.1em #282828;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+.circle{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: yellow;
+}
+header p{
+    color: #999999;
+}
+
 section{
     margin: 150px 10px;
 }
@@ -64,43 +95,47 @@ section{
     height: 250px;
     margin: 15px;
 }
+/*Bot*/
 footer{
-    background-color: rgb(24, 23, 23);
+    background-color: #282828;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     text-align: center;
-    color: white;
-    height: 400px;
-    padding-top: 150px;
 }
-.footer__position, ul{
+/*Navigation*/
+footer img{
+    padding-bottom: 2rem;
+}
+footer ul{
     display: flex;
     justify-content: center;
+    list-style: none;
 }
-.footer__position > li{
-    margin: 25px 25px;
+footer li{
+    margin: 2rem 2rem;
+    font-weight: 700;
 }
-.footer__position, a{
-    flex-direction: row;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-}
-.footer__nav > li{
-    flex-direction: row;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    margin: 25px 25px;
-    text-transform: uppercase;
-}
-.footer__nav > li{
+footer i{
+    font-size: 1.8em;
+    margin-bottom: 4rem;
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
     border-radius: 50%;
-    background-color: rgb(54, 53, 53);
-    font-size: 1.3em;
-    text-align: center;
-    padding: 10px 20px;
+    background-color: #444444;
 }
-footer > p{
-    margin-top: 75px;
+/*Text*/
+small{
+    color: white;
+    opacity: 70%;
 }
+/*Button*/
+.up{
+    position: fixed;
+    color: white;
+    bottom: 5rem;right: 5rem;
+    padding: 1rem 1rem;
+    background-color: #8121e0;
+    border-radius: 0.5rem;
+}
+
