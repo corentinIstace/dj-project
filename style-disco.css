@@ -1,0 +1,287 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Top*/
+header{
+    background-image: url(images/banner-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;
+}
+/*Navigation*/
+header img{
+    float: left;
+    margin-left: 3rem;
+}
+nav .main_pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav{
+    position: absolute;
+    top: 2.3rem;
+    right: 7rem;
+}
+header li{
+    list-style: none;
+    display: table-cell;
+    padding: 0.8rem 0.7rem;
+}
+header .interne a{
+    padding: 0 1rem;
+}
+header .social{
+    font-size: 1.5em;
+}
+i{
+    opacity: 50%;
+}
+i:hover{
+    opacity: 100%;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header a img{
+    width: auto;
+}
+label{
+    display: none;
+}
+label, #toggle{
+    display: none;
+}
+/*Text*/
+h1{
+    font-size: 3rem;
+    text-shadow: 0px 0px 0.1em #282828;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+.circle{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: yellow;
+}
+header p{
+    color: #999999;
+}
+
+
+/*Middle*/
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    max-width: 1478px;
+}
+/*Text*/
+figcaption{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+.title-album{
+    font-size: 1.8em;
+    padding-bottom: 0.2rem;
+}
+.year-album{
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #444444;
+}
+
+
+/*Bot*/
+footer{
+    background-color: #282828;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+/*Navigation*/
+footer img{
+    padding-bottom: 2rem;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer li{
+    margin: 2rem 2rem;
+    font-weight: 700;
+}
+footer i{
+    font-size: 1.8em;
+    margin-bottom: 4rem;
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #444444;
+}
+/*Text*/
+small{
+    color: white;
+    opacity: 70%;
+}
+/*Button*/
+.up{
+    position: fixed;
+    color: white;
+    bottom: 5rem;right: 5rem;
+    padding: 1rem 1rem;
+    background-color: #8121e0;
+    border-radius: 0.5rem;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 1200px){
+    header{
+        padding-top: 0;
+    }
+    header nav{
+        position: static;
+    }
+    header li{
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background: #282828;
+    }
+    nav .main_pages {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        background: #8121e0;
+    }
+    nav .main_pages i{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    label{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+    header a img{
+        width: auto;
+        height: 40px;
+        margin-top: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    /*Middle*/
+    figure img{
+        max-width: 100%;
+        height: auto;
+    }
+    figcaption{
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px){
+    header h1{
+        font-size: 2.2rem;
+    }
+    .up{
+        display: none;
+    }
+    footer{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    footer .interne{
+        flex-wrap: wrap;
+    }
+    footer .social li{
+        margin: auto;
+    }
+    footer .social i{
+        padding: 0.8rem;
+    }
+    /*Middle*/
+    section{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    figure{
+        height: auto;
+        margin: auto;
+    }
+    /*Middle*/
+    section{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 320px){
+    header nav{
+        top: 25%;
+        left: 5%;
+        max-width: 300px;
+    }
+    header h1{
+        font-size: 2.2rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .ul{
+        padding-bottom: 2rem;
+    }
+    footer .interne{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    footer .interne li{
+        margin: 0.5rem;
+    }
+    footer .social i{
+        padding: 0.5rem;
+    }
+    /*Middle*/
+    section{
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    figcaption{
+        margin: 0;
+        padding: 0;
+    }
+}
