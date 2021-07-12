@@ -1,0 +1,209 @@
+@font-face {
+    font-family: poppins;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+/*Top*/
+header{
+    background-image: url(images/banner-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;
+}
+/*Navigation*/
+header img{
+    float: left;
+    margin-left: 3rem;
+}
+nav .main_pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav{
+    position: absolute;
+    top: 2.3rem;
+    right: 7rem;
+}
+header li{
+    list-style: none;
+    display: table-cell;
+    padding: 0.8rem 0.7rem;
+}
+header .interne a{
+    padding: 0 1rem;
+}
+header .social{
+    font-size: 1.5em;
+}
+i{
+    opacity: 50%;
+}
+i:hover{
+    opacity: 100%;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header a img{
+    width: auto;
+}
+label{
+    display: none;
+}
+label, #toggle{
+    display: none;
+}
+/*Text*/
+h1{
+    font-size: 3rem;
+    text-shadow: 0px 0px 0.1em #282828;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+.circle{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: yellow;
+}
+header p{
+    color: #999999;
+}
+/*section*/
+section{
+    background-color: white;
+}
+.reservation{
+    margin: 100px 200px;
+    border: 1px solid rgb(179, 177, 177);
+}
+.mois {
+    display: flex;
+    justify-content: center;
+    background-color: #282828;
+    color: white;
+    border: 1px solid grey;
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+.mois > h3 {
+    padding: 50px 40px;
+}
+h3:first-child{
+    border-bottom: 5px solid #8121e0;
+}
+article{
+    height: 120px;
+    margin-top: 40px;
+}
+.reservation__date{
+    color: #999999;
+    font-size: 1.1em;
+    margin: 20px 250px;
+}
+.reservation__title{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 250px;
+}
+.reservation p{
+    text-align: left;
+    color: #999999;
+    margin: 30px 250px;
+    display: flex;
+}
+button{
+    border: none;
+    background-color: white;
+    font-weight: bolder;
+    color: #444444;
+    margin-right: 50px;
+    float: right;
+    margin-top: -50px;
+}
+.reservation-container1{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 200px;
+    height: 760px;
+}
+.vertical-line{
+    border-left: 1px solid black;    
+    margin: 0px 50%;
+}
+#line1{
+    height: 170px;
+    width: 3px;
+}
+#line2{
+    height: 140px;
+    width: 3px;
+}
+#line4{
+    height: 160px;
+    width: 3px;
+}
+#line5{
+    height: 140px;
+    width: 3px;
+}
+/*Bot*/
+footer{
+    background-color: #282828;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+/*Navigation*/
+footer img{
+    padding-bottom: 2rem;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer li{
+    margin: 2rem 2rem;
+    font-weight: 700;
+}
+footer i{
+    font-size: 1.8em;
+    margin-bottom: 4rem;
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #444444;
+}
+/*Text*/
+small{
+    color: white;
+    opacity: 70%;
+}
+/*Button*/
+.up{
+    position: fixed;
+    color: white;
+    bottom: 5rem;right: 5rem;
+    padding: 1rem 1rem;
+    background-color: #8121e0;
+    border-radius: 0.5rem;
+}
