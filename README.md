@@ -89,12 +89,12 @@ Linkedin: https://www.linkedin.com/in/corentin-istace-03681020a/
 
 Zoé Ranzy
 
-E-mail: zoe.ranzy@gmail.com
-Github: https://github.com/hawkstan
-Linkedin: www.linkedin.com/in/z-m-ranzy
+E-mail: zoe.ranzy@gmail.com  
+Github: https://github.com/hawkstan  
+Linkedin: www.linkedin.com/in/z-m-ranzy  
 
 Julien Daenen
 
-E-mail: daenen.julien.pro@gmail.com
-Github: https://github.com/JulienDaenen
-Linkedin: https://www.linkedin.com/in/julien-daenen-92b9411b8/
+E-mail: daenen.julien.pro@gmail.com  
+Github: https://github.com/JulienDaenen  
+Linkedin: https://www.linkedin.com/in/julien-daenen-92b9411b8/  
