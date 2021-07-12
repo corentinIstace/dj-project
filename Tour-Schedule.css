@@ -164,6 +164,62 @@ button{
     height: 140px;
     width: 3px;
 }
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    margin-left: 88px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* vertical button */
+.container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+  
+.container:hover input ~ .checkmark {
+    background-color: rgb(5, 5, 5);
+}
+    
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+   display: block;
+}
+  
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #8121e0;
+  }
 /*Bot*/
 footer{
     background-color: #282828;
