@@ -74,9 +74,9 @@ After that we have to use responsive design and to push it on Github.
     ```
 
 
-### You can find the website with this link: ##
+### You can find the website with this link:
 
-    https://corentinistace.github.io/dj-project/
+https://corentinistace.github.io/dj-project/
 
 
 ## Contact
