@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header - version zoé
+header {
+    order: 0;
+    background-image: url(images/banner-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#point {
+    color: rgb(255, 255, 0);
+}
+header .heading {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+}
+header a:hover {
+    color: rgb(255, 255, 0);
+}
+header nav .social i {
+    color: rgba(180, 180, 180, 0.5);
+}
+header nav i:hover {
+    color: rgb(255, 255, 0);
+}
+header nav #header__burger {
+    order: 3;
+}
+#header__burger #burger {
+    display: none;
+}
+/* header mobile 
+@media screen and (max-width: 376px) {
+
+}
+/* header tablet 
+@media screen and (min-width: 376px) and (max-width: 769px) {
+
+}
+/* header desktop 
+@media screen and (min-width: 769px) {
+    header {
+        height: 500px;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    header #burg-items {
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav li {
+        display: table-cell;
+        padding-right: 1rem;
+    }
+}
+*/
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 376px) {
+    #main h3 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 769px) {
+    #main h3 {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    #main h3 {
+        font-size: 2rem;
+    }
+}
+
+/* section about dj */
+.sec__dj {
+    order: 1;
+    margin: 8%;
+    height: fit-content;
+    display: flex;
+}
+.sec__dj h3 {
+    font-weight: 500;
+}
+.sec__dj--contact {
+    display: flex;
+    flex-direction: column;
+}
+.sec__dj--contact .mailtel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.sec__dj--contact .mailtel i {
+    margin-right: 0.6rem;
+    color: rgb(185, 185, 185);
+}
+.sec__dj--contact .social {
+    display: flex;
+    justify-content: space-between;
+}
+.sec__dj--but {
+    background-color: #8121e0;
+    padding: 1rem 1.6rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.sec__dj--txt .quote p {
+    font-weight: 300;
+    font-style: italic;
+}
+.sec__dj--txt .quote {
+    color: rgb(160, 160, 160);
+}
+.sec__dj--txt .quote img {
+    float: right;
+}
+/* section dj mobile */
+@media screen and (max-width: 376px) {
+    .sec__dj {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sec__dj hr {
+        width: 60%;
+        color: rgba(226, 226, 226, 0.774);
+        margin-top: 1rem;
+    }
+    .sec__dj .djpic {
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .sec__dj--contact .mailtel {
+        flex-direction: column;
+    }
+    .sec__dj--contact .social {
+        width: 40%;
+        font-size: 1.3rem;
+    }
+    .sec__dj--txt .quote img {
+        width: 60%;
+        margin-bottom: 1.2rem;
+    }
+    .sec__dj--txt {
+        display: flex;
+        flex-direction: column;
+    }
+    .sec__dj--txt .quote small {
+        position: relative;
+        top: 1rem;
+    }
+    .sec__dj--txt .quote p {
+        margin-top: 2.2rem;
+    }
+    .sec__dj--but {
+        width: 9rem;
+    }
+}
+/* section dj tablet */
+@media screen and (min-width: 376px) and (max-width: 769px) {
+    .sec__dj {
+        flex-direction: column-reverse;
+    }
+    .sec__dj .djpic {
+        width: 80%;
+        margin-top: 3rem;
+    }
+    .sec__dj hr {
+        width: 35%;
+        color: rgba(226, 226, 226, 0.774);
+        margin-top: 2rem;
+    }
+    .sec__dj--contact .mailtel {
+        width: 55%;
+    }
+    .sec__dj--contact .social {
+        width: 20%;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .sec__dj--txt .quote p {
+        margin-top: 1rem;
+    }
+    .sec__dj--but {
+        position: relative;
+        top: 3.5rem;
+    }
+}
+/* section dj desktop */
+@media screen and (min-width: 769px) {
+    .sec__dj {
+        flex-direction: row-reverse;
+    }
+    .sec__dj hr {
+        width: 45%;
+        color: rgba(226, 226, 226, 0.774);
+        margin-top: 2rem;
+    }
+    .sec__dj--txt {
+        width: 50%;
+        margin-right: 5rem;
+    }
+    .sec__dj--txt .quote small {
+        position: relative;
+        top: 2rem;
+    }
+    .sec__dj--txt .quote p {
+        position: relative;
+        top: 4rem;
+    }
+    .sec__dj--txt .quote img {
+        position: relative;
+        top: 4rem;
+    }
+    .sec__dj--contact {
+        width: 70%;
+    }
+    .sec__dj--contact .social {
+        width: 50%;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    .sec__dj--contact .social i:hover {
+        color: #8121e0;
+    }
+    .sec__dj--but {
+        position: relative;
+        top: 9rem;
+    }
+    .sec__dj--but:hover {
+        color: #8121e0;
+        background-color: black;
+    }
+}
+
+
+/* section discover dj */
+.sec__discover {
+    order: 2;
+    background-color: rgb(245, 245, 245);
+    background-image: url(images/bg-circle-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sec__discover i {
+    color: #8121e0;
+    font-size: 3rem;
+    float: left;
+}
+.sec__discover .txt {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.sec__discover h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+/* section discover mobile */
+@media screen and (max-width: 376px) {
+    .sec__discover {
+        background-size: cover;
+        padding: 2.5rem 1rem;
+    }
+    .sec__discover td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .sec__discover .txt {
+        text-align: center;
+    }
+    .sec__discover i {
+        margin-bottom: 1rem;
+    }
+    .sec__discover h3 {
+        font-size: 1rem;
+    }
+}
+/* section discover tablet */
+@media screen and (min-width: 376px) and (max-width: 769px) {
+    .sec__discover {
+        padding: 3rem 6rem;
+    }
+    .sec__discover tr {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec__discover table {
+        padding-top: 2rem;
+    }
+    .sec__discover i {
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .sec__discover td {
+        padding: 1rem;
+    }
+}
+/* section discover desktop */
+@media screen and (min-width: 769px) {
+    .sec__discover {
+        padding: 3rem 4rem;
+    }
+    .sec__discover tr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sec__discover td {
+        padding: 1rem;
+    }
+    .sec__discover table {
+        padding-top: 2rem;
+    }
+    .sec__discover i {
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+    .sec__discover td:hover {
+        color: #8121e0;
+    }
+}
+
+
+/* section latest releases */
+.sec__latest {
+    order: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.sec__latest small {
+    color: rgb(185, 185, 185);
+    font-weight: 400;
+}
+/* section latest mobile */
+@media screen and (max-width: 376px) {
+    .sec__latest {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .sec__latest--txt {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+    .sec__latest--albums img {
+        height: 75%;
+    }
+    .sec__latest--albums {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* section latest tablet */
+@media screen and (min-width: 376px) and (max-width: 769px) {
+    .sec__latest--albums {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 6rem;
+    }
+    .sec__latest--albums img {
+        height: 80%;
+    }
+    .sec__latest--txt {
+        margin: auto;
+        margin-top: 4rem;
+        width: 50%;
+    }
+}
+/* section latest desktop */
+@media screen and (min-width: 769px) {
+    .sec__latest {
+        width: 60%;
+        margin-bottom: 10rem;
+        margin-top: 5rem;
+    }
+    .sec__latest--albums {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+    }
+    .sec__latest--it {
+        margin: 1rem;
+    }
+    .sec__latest p, small {
+        color: #444444;
+        font-weight: 200;
+    }
+    .sec__latest--albums img:hover{
+        transform: scale(1.03);
+        box-shadow: 1px 3px 10px #8121e0;
+    }
+}
+
+
+/* footer - version zoé
+footer {
+    order: 4;
+    text-align: center;
+    color: white;
+    background-color: #282828;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+/*footer {
+        background-color: #282828;
+        text-align: center;
+        color: #444444;
+        padding: 5%;
+    }
+    footer a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .top {
+        padding: 5px 10px;
+        border-radius: 5%;
+        background-color: #8121e0;
+    }
+    footer .social, .interne {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        margin: auto;
+    }
+    footer .fab {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #444444;
+    }
+    footer nav, .top {
+        text-decoration: none;
+        color: #ffffff;
+    }
+/* footer mobile 
+@media screen and (max-width: 376px) {
+
+}
+/* footer tablet 
+@media screen and (min-width: 376px) and (max-width: 769px) {
+
+}
+/* footer desktop 
+@media screen and (min-width: 769px) {
+
+}
+*/
