@@ -58,15 +58,16 @@ header label {
     header {
         padding-bottom: 3.6rem;
     }
+    header .dot, .burg {
+        margin-top: -0.6rem;
+    }
     header .heading {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
         background: #282828;
     }
     .heading img {
         height: 2rem;
-        margin-left: 0.5rem;
+        position: fixed;
+        left: 4rem
     }
     .header__title {
         margin-top: 2rem;
@@ -81,10 +82,21 @@ header label {
     #burg-items {
         padding: 0rem 1rem 1rem;
     }
+    .burg {
+        z-index: 3;
+    }
+    .dots {
+        padding-right: 1rem;
+    }
     #burg-items li {
         padding-top: 1rem;
         font-weight: 600;
         font-size: 1.2rem;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
     header nav #burg-items {
         display: none;
@@ -97,11 +109,37 @@ header label {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    #dots-items {
+        padding: 2rem 1rem 1rem;
+        background-color: #8121e0;
+        padding: 1rem;
+        margin-left: 20rem;
+    }
+    nav #dots-items li {
+        padding-top: 0.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    #dots-items {
+        display: none;
+        justify-content: center;
+        height: auto;
+        background: #8121e0;
+    }
+    #dots-items i{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     header label {
         cursor: pointer;
     }
     #burger:checked + #burg-items {
         display: flex;
+        margin: 0;
+    }
+    #dots:checked + #dots-items {
+        display: flex;
+        margin: 0;
     }
 }
 /* header tablet */
@@ -109,16 +147,13 @@ header label {
     header {
         padding-bottom: 8rem;
     }
-    header label {
+    header .dot, .burg {
         margin-top: -0.6rem;
     }
     .dots {
         padding-right: 1rem;
     }
     header .heading {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
         background: #282828;
     }
     header nav {
@@ -152,12 +187,14 @@ header label {
     #burg-items {
         padding: 0rem 1rem 1rem;
     }
+    .burg {
+        z-index: 3;
+    }
     #dots-items {
         padding: 2rem 1rem 1rem;
         background-color: #8121e0;
         padding: 1rem;
         margin-left: 20rem;
-        z-index: 3;
     }
     nav #burg-items li {
         padding-top: 1rem;
@@ -183,11 +220,11 @@ header label {
     }
     #burger:checked + #burg-items {
         display: flex;
-        z-index: 4;
+        margin: 0;
     }
     #dots:checked + #dots-items {
         display: flex;
-        z-index: 4;
+        margin: 0;
     }
 }
 /* header desktop */
