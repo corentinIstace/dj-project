@@ -40,6 +40,9 @@ header li{
 header .interne a{
     padding: 0 1rem;
 }
+header .interne a:hover{
+    color: #282828;
+}
 header .social{
     font-size: 1.5em;
 }
@@ -95,6 +98,10 @@ section{
     margin-bottom: 6rem;
     max-width: 1478px;
 }
+section img:hover{
+    box-shadow: 0px 0px 3rem #8121e0;
+    transition: 0.1s;
+}
 /*Text*/
 figcaption{
     text-align: center;
@@ -120,6 +127,9 @@ footer{
     text-align: center;
 }
 /*Navigation*/
+footer .interne a:hover{
+    color: #8121e0;
+}
 footer img{
     padding-bottom: 2rem;
 }
@@ -153,7 +163,15 @@ small{
     bottom: 5rem;right: 5rem;
     padding: 1rem 1rem;
     background-color: #8121e0;
+    border: 1px solid #8121e0;
+    transition: 0.1s;
     border-radius: 0.5rem;
+}
+.up:hover{
+    background-color: #282828;
+    border: 1px solid white;
+    box-shadow: 0px 0px 0.2em #000000;
+    transition: 0.1s;
 }
 
 
@@ -250,7 +268,7 @@ small{
         margin-right: auto;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 450px){
     header nav{
         top: 25%;
         left: 5%;
