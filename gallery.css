@@ -86,15 +86,52 @@ h1{
 header p{
     color: #999999;
 }
-
+/*section*/
 section{
     margin: 150px 10px;
 }
-.ligne > img{
+.ligne{
+    display: flex;
+    flex-direction: row;
+}
+.zoom{
+    display: inline-block;
+    position: relative;
+}
+.zoom ::before{
+    content: 'ZOOM';
+    position: absolute;
+    top: 40%; right: 12%;
+}
+.zoom > img{
     width: 320px;
     height: 250px;
     margin: 15px;
 }
+.zoom p{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border: 25px solid rgba(173, 170, 170, 0.3);
+    background-clip: padding-box;
+    border-radius: 50%;   
+    position: absolute;
+    top: 30%; right: 35%; 
+    opacity: 0;
+} 
+.zoom:hover p{
+
+        background-color: white;
+        height: 60px;
+        width: 60px;
+        border: 25px solid rgba(173, 170, 170, 0.3);
+        background-clip: padding-box;
+        border-radius: 50%;   
+        position: absolute;
+        top: 30%; right: 35%; 
+        opacity: 1;
+} 
+
 /*Bot*/
 footer{
     background-color: #282828;
