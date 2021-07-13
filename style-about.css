@@ -36,7 +36,7 @@ header .heading {
 ul {
     list-style-type: none;
 }
-header #burger {
+header #burger, #dots {
     display: none;
 }
 header label {
@@ -112,15 +112,24 @@ header label {
     header label {
         margin-top: -0.6rem;
     }
+    .dots {
+        padding-right: 1rem;
+    }
     header .heading {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
         background: #282828;
     }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     .heading img {
         height: 2rem;
-        margin-left: 1rem;
+        position: fixed;
+        left: 4rem
     }
     .header__title {
         margin-top: 7rem;
@@ -129,12 +138,13 @@ header label {
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
-    header nav #burg-items {
+    #burg-items {
         display: none;
         flex-direction: column;
         justify-content: center;
         height: auto;
         background: #8121e0;
+        margin-right: 2rem;
     }
     #burg-items .interne {
         flex-direction: column;
@@ -142,21 +152,42 @@ header label {
     #burg-items {
         padding: 0rem 1rem 1rem;
     }
-    #burg-items li {
+    #dots-items {
+        padding: 2rem 1rem 1rem;
+        background-color: #8121e0;
+        padding: 1rem;
+        margin-left: 20rem;
+        z-index: 3;
+    }
+    nav #burg-items li {
         padding-top: 1rem;
         font-weight: 600;
     }
-    header nav #burg-items i{
+    nav #dots-items li {
+        padding-top: 0.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    #dots-items {
+        display: none;
+        justify-content: center;
+        height: auto;
+        background: #8121e0;
+    }
+    #dots-items i{
         padding-left: 2rem;
         padding-right: 2rem;
     }
     header label {
         cursor: pointer;
-        display: flex;
-        justify-content: flex-start;
     }
     #burger:checked + #burg-items {
         display: flex;
+        z-index: 4;
+    }
+    #dots:checked + #dots-items {
+        display: flex;
+        z-index: 4;
     }
 }
 /* header desktop */
@@ -168,7 +199,7 @@ header label {
         color: rgba(180, 180, 180, 0.5);
         font-size: 1.2rem;
     }
-    header nav #burger, label {
+    header nav #burger, label, #dots {
         display: none;
     }
     header .heading {
